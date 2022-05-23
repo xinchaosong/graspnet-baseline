@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python train.py --camera realsense --log_dir logs/log_rs_c --dataset_root /media/DATACENTER2/HiLo_other_approaches/GraspNet_1B --learning_rate 0.001 --batch_size 4 --lr_decay_steps 60,100,120 --max_epoch 140
