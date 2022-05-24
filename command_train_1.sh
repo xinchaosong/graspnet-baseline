@@ -1,1 +1,1 @@
-CUDA_VISIBLE_DEVICES=1 python train.py --camera kinect --log_dir logs/log_kn_c --dataset_root /media/DATACENTER2/HiLo_other_approaches/GraspNet_1B --learning_rate 0.001 --batch_size 4 --lr_decay_steps 60,100,120 --max_epoch 140
+CUDA_VISIBLE_DEVICES=1 python train.py --camera kinect --log_dir logs/log_kn_c --dataset_root /media/DATACENTER2/HiLo_other_approaches/GraspNet_1B --batch_size 8
