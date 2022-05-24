@@ -23,6 +23,8 @@ from pytorch_utils import BNMomentumScheduler
 from graspnet_dataset import GraspNetDataset, collate_fn, load_grasp_labels
 from label_generation import process_grasp_labels
 
+torch.multiprocessing.set_sharing_strategy('file_system')
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset_root', required=True, help='Dataset root')
 parser.add_argument('--camera', required=True, help='Camera split [realsense/kinect]')
